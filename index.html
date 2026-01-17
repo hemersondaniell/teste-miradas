@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PROJETO MIRADAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    /* IMAGEM INICIAL */
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* CONTEÚDO */
+    .content {
+      padding: 16px;
+    }
+
+    .content h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* GRID 3 COLUNAS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    /* CARD */
+    .card {
+      background-color: #151515;
+      border-radius: 10px;
+      text-align: center;
+      overflow: hidden; 
+    }
+
+    .card img {
+        width: 100%;        /* ocupa toda largura do card */
+        height: 200px;      /* altura fixa para todas as imagens */
+        object-fit: cover;  /* preenche o espaço, corta excesso sem deformar */
+        display: block;
+        border-radius: 6px;
+}
+
+@media (min-width: 1024px) {
+  .card img {
+    height: 500px;
+  }
+}
+
+
+    .card h6 {
+      margin: 8px 0 6px;
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    .vote-btn {
+      display: inline-block;
+      padding: 6px 10px;
+      font-size: 12px;
+      background-color: #e50914;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .vote-btn:active {
+      opacity: 0.8;
+    }
+
+    /* IMAGEM FINAL */
+    .footer-img img {
+      width: 100%;
+      display: block;
+      margin-top: 30px;
+    }
+
+    /* AJUSTE PARA TELAS MUITO PEQUENAS */
+    @media (max-width: 360px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- IMAGEM DE ABERTURA -->
+  <div class="hero">
+    <img src="./cartazes/miradasII.inicio.png" alt="Projeto MIRADAS">
+  </div>
+
+  <!-- SEÇÃO DE VOTAÇÃO -->
+  <div class="content">
+
+    <div class="grid">
+
+      <!-- CARD 01 -->
+      <div class="card">
+        <img src="./cartazes/MemoriaseEntrelacamentos.png" alt="Cartaz Curta 01">
+        <h5>Memorias e Entrelacamentos</h5>
+        <h6>MAMB1M</h6>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScd1YUyfrvfVcAw0Bk2OahG-yyuKi_y7mQjcLWCS2hzGjWp-A/viewform?usp=pp_url&entry.251979213=Mem%C3%B3rias+e+Entrela%C3%A7amentos+-+Mamb1M" target="_blank" class="vote-btn">VOTAR</a>
+      </div>
+
+      <!-- CARD 02 -->
+      <div class="card">
+        <img src="./cartazes/largartas.png" alt="Cartaz Curta 02">
+        <h5>Largatas não falam</h5>
+        <h6>EDIFIC1M</h6>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScd1YUyfrvfVcAw0Bk2OahG-yyuKi_y7mQjcLWCS2hzGjWp-A/viewform?usp=pp_url&entry.251979213=Largartas+n%C3%A3o+falam+-+Edific1M" target="_blank" class="vote-btn">VOTAR</a>
+      </div>
+
+      <!-- CARD 03 -->
+      <div class="card">
+        <img src="./cartazes/Asraízescantam.jpg" alt="Cartaz Curta 03">
+        <h5>As raízes encantam</h5>
+        <h6>MAMB1V</h6>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScd1YUyfrvfVcAw0Bk2OahG-yyuKi_y7mQjcLWCS2hzGjWp-A/viewform?usp=pp_url&entry.251979213=As+ra%C3%ADzes+cantam+-+Mamb2V" target="_blank" class="vote-btn">VOTAR</a>
+      </div>
+
+      <!-- DUPLIQUE ATÉ O 22 -->
+      
+    </div>
+  </div>
+
+  <!-- IMAGEM FINAL -->
+  <div class="footer-img">
+    <img src="./cartazes/fimMiradas.png" alt="Encerramento MIRADAS">
+  </div>
+
+</body>
+</html>
